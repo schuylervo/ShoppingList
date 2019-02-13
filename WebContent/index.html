@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css" >
+</head>
+<body>
+	<h1> Welcome to Interactive Grocery Market Plus!</h1>
+	<h3> Click 'add' to add an item to your shopping cart.</h3>
+	
+	<p>
+		<span id="item">Apples </span>
+		<span id="price">$1.00</span>
+		<button onclick="addToCart('apple', 1.00)">Add</button>
+	</p>
+		<span id="item">Peaches</span>
+		<span id="price">$1.50</span>
+		<button onclick="addToCart('peach', 1.50)">Add</button>
+	<p>
+		<span id="item">Walnuts</span>
+		<span id="price">$3.00</span>
+		<button onclick="addToCart('walnut', 3.00)">Add</button>
+	</p>
+		<button onclick="checkOut()">Check Out</button>
+	
+	<div>
+	
+	</div>
+	<div>
+		<table class = "table">
+			<tr id = "tablehead">
+				<th> Product </th>
+				<th> Price </th>
+			</tr>
+		</table>
+	
+	</div>
+	
+	<div>
+		<table class = "table">
+			<tr id = "checkouttablehead">
+				
+			</tr>
+		</table>
+	
+	</div>
+	
+<script src="script.js"></script>
+</body>
+</html>
