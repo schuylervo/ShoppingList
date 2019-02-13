@@ -1,9 +1,25 @@
 @charset "ISO-8859-1";
 
+h1 {
+	text-align:center;
+	color:firebrick;
+}
+
+h3 {
+	text-align:center;
+	color:firebrick;
+}
+
+body {
+	background-color: aquamarine;
+}
+
 .table {
 	border: 2px solid black;
 	border-radius: 3px;
+	table-layout: fixed;
+    width: 250px;
 	font-size: 200%;
 	padding: 0 8px;
-	
+	background-color: lightgreen;
 }

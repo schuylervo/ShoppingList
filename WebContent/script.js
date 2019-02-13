@@ -22,11 +22,11 @@ function checkOut() {
 		sum += prices[j];	
 	}
 	
-	checkEl.insertAdjacentHTML("beforeend", "<tr id = 'checkouttablehead'><td> Total </td><td> $"+ sum +" </td></tr>");	
+	checkEl.insertAdjacentHTML("beforeend", "<tr id = 'checkouttablehead'><td> </td><td> $"+ Number(sum).toFixed(2) +" </td></tr>");	
 	
 	for (var i=0; i<items.length; i++) {
 		
-			nameEl.insertAdjacentHTML("afterend", "<tr id = 'tablecell'><td> "+ items[i] + " </td><td> $"+ prices[i] +" </td></tr>"); 
+			nameEl.insertAdjacentHTML("afterend", "<tr id = 'tablecell'><td> "+ items[i] + " </td><td> $"+ Number(prices[i]).toFixed(2) +" </td></tr>"); 
 			
 	}
 	
